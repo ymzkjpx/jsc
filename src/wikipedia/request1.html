@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="wikirequest.js"></script>
+    <title>Document</title>
+    <style>
+      .notice {
+        display: block;
+        margin: 2rem 0;
+        padding: 0;
+        opacity: 0;
+        color: orangered;
+        transition: 5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>wikipedia sub links</h2>
+    <p>wikipediaのHTMLを取得します</p>
+    <p>CORSの制約を回避するためにJSONPを利用していますが、一般的にセキュリティ上の問題があるためこの手法は禁止されています。</p>
+
+    <form id="form1">
+      <input type="text" id="field1" value="金子勇" />
+      <button type="submit">wikipedia検索</button>
+    </form>
+    <div>
+      <p id="results"></p>
+    </div>
+  </body>
+</html>
